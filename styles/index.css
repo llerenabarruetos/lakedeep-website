@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,500&display=swap');
+
+body {
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(36, 36, 36);
+    width: 100vw;
+}
+
+/*--- Header ---*/
+.navbar {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: .1rem;
+    background: rgba(31, 31, 31, 0);
+}
+.bannerImg {
+    height: 5vh;
+    padding-left: 0.4rem;
+}
+.navbar-nav li {
+    padding-right: 1rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    padding-top: 0.4rem; /*Make the header links go down*/
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(42, 205, 255);
+}
+.active {
+    font-weight: 600;
+    text-shadow: .1rem .1rem 1rem rgb(0, 217, 255);
+}
+.in { /* To show the header buttons when the hamburger toggle is pressed (and website is small) */
+    display: block !important;
+}
+
+/*--- Landing Banner ---*/
+.landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: table;
+    z-index: -1;
+}
+.home-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.home-inner {
+    background-image: url(../images/LakeImageStephen.png);
+    position: fixed;
+    display: table;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+}
+.caption {
+    width: 100%;
+    max-width: 100%;  /*For when the browser window is sized down*/
+    position: absolute;
+    top: 35%;
+    z-index: 1; /*On TOP of the LD Banner image*/
+    color: white;
+    padding-bottom: 3rem;
+}
+.caption h1 {
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+    text-shadow: .1rem .1rem 0.5rem rgb(0, 0, 0);
+    padding-bottom: 0.8rem;
+}
+.caption h3 {
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+    text-shadow: .1rem .1rem .5rem black; 
+    padding-bottom: 1.2rem;
+}
+.btn-lg {
+    border-width: medium;
+    border-radius: 0;
+    padding: 0.6rem 1.3rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+/*--- About Card on the main page---*/
+.aboutCard {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+.aboutCard h1 {
+    color: white;
+    text-shadow: .1rem .1rem 1rem rgb(0, 195, 255); 
+    font-size: 3rem;
+}
+.aboutCard p {
+    color: white;
+    font-size: 1.35rem;
+}
+.aboutCard a {
+    font-size: 1.1rem;
+    background: rgb(0, 162, 255);
+}
+.aboutCard a:hover {
+    background: rgb(0, 196, 88);
+}
+
+/*--- Latest Release Banner ---*/
+.latestReleaseBanner {
+    display: block;
+    background-image: url(../images/DWHalloweenBanner.png);
+    background-position: center;
+    background-size: cover;
+    height: 65vh; 
+    color: white;
+}
+.latestReleaseBanner:hover {
+    color: orange;
+    text-decoration: none;
+}
+.latestReleaseBanner h1 {
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    letter-spacing: 0.3rem;
+}
+
+
+/*--- Footer ---*/
+.footerLogo {
+    height: 2.5rem;
+    margin: 1.5rem 0;
+}
+footer {
+    background-color:rgb(36, 36, 36);
+    color: white;
+    padding: 2rem 0 3.5rem;
+}
+footer strong {
+    display: block;
+}
+footer a {
+    color: white;
+    display: block;
+    margin-bottom: 0.8rem;
+}
+footer a:hover {
+    color: rgb(0, 162, 255);
+}
+footer svg.svg-inline--fa {
+    font-size: 1.5rem;
+}
+
+/*---- about.php ----*/
+/*---- About: Welcome Banner-----*/
+.aboutBanner {
+    background-image: url(../images/NeonLD.png) ;
+}
+.aboutUsContainer {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+    width: 70%;
+    margin: auto;
+}
+.aboutUsContainer h1 {
+    text-shadow: .1rem .1rem 1.5rem rgb(0, 195, 255); 
+    font-size: 4rem;
+}
+.aboutUsContainer p {
+    padding-top: 1.5rem;
+}
+/*--- Personal Introductions "The Team:" ---*/
+.introductionsContainer {
+    background: black;
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
+    color: white;
+}
+.introductionsContainer h1 {
+    text-shadow: .2rem .2rem 1.5rem rgb(0, 195, 255); 
+    font-size: 3.5rem;
+}
+.names {
+    font-size: 2rem;
+    align-items: center;
+    padding-bottom:1rem;
+}
+.introParagraph {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    width: 60%;
+    margin: auto;
+    font-size: 1.3rem;
+}
+.profilePic {
+    height: 12rem;
+    display: block;
+    margin: auto;
+    width: auto;
+}
+.mailLogo {
+    font-size: 2.5rem;
+    color: white;
+}
+.mailLogo:hover {
+    color: rgb(0, 195, 255);
+}
+
+/*---- games.php ----*/
+/*---- Games: Welcome Banner ----*/
+.gamesBanner {
+    background-image: url(../images/LakeDeepLandingBanner.png) ;
+    background-position: center top;
+}
+.gamesIntroContainer {
+    background-color: rgb(0, 132, 255);
+}
+.gamesIntroContainer p {
+    width: 70% !important;
+    margin: auto;
+}
+.gamesContainer {
+    padding: 0;
+    color: white;
+}
+.gamebg {
+    padding: 2rem 0 2.5rem;
+}
+.gamePic {
+    height: 15rem;
+}
+
+/*---- websites.php ----*/
+/*---- Welcome Banner ----*/
+.ourWebsitesBanner {
+    background-image: none;
+    background: rgb(240,28,228);
+    background: linear-gradient(90deg, rgba(240,28,228,1) 21%, rgba(0,143,255,1) 77%);
+}
+.ourWebsitesTitle h1{
+    width: 100%;
+    max-width: 100%;  /*For when the browser window is sized down*/
+    position: absolute;
+    top: 36%;
+    z-index: 1; /*On TOP of the LD Banner image*/
+    color: white;
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+}
+.websitebg-Lifescoin {
+    background: rgb(0,177,255);
+    background: linear-gradient(90deg, rgba(0,177,255,1) 37%, rgba(28,43,240,1) 86%);
+}
+.appName {
+    font-size: 3rem;
+    padding-bottom: 0;
+}
+.appLogo {
+    height: 7rem;
+    display: block;
+    margin: auto;
+    width: auto;
+    padding-bottom: 1rem;
+}
+.boldSubHeadings {
+    font-size: 1.4rem;
+}
+
+
+
+.mainContainer {
+    width: 100%;
+    margin: auto;
+}
+
+.centerContainer {
+    width: 50%;
+    margin: auto;
+}
+
+.imageCenterContainer {
+    text-align: center;
+    margin-top: 3.5vh;
+}
+
+.subtitle {
+    font-size: 4vh;
+    text-align: center;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.column {
+  flex: 25%;
+  padding: 5px;
+}
+.row {
+  display: flex;
+  text-align:center;
+}
+
+.productLogo {
+    height: 15vh;
+}
+
+.slogan {
+    font-size: 5vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+@media screen and (max-width:480px) {
+    .mainContainer {
+        width: 100%;
+    }
+}
